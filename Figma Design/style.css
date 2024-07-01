@@ -1,8 +1,16 @@
-body {
+body{
+  background-color: white;
+  font-size: 13px;
+}
+.main-body {
   background-color: #232e26;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   overflow-x: hidden;
+  width: 900px;
+  margin: auto;
+  box-shadow: 50px 50px 50px  grey;
+  border-radius: 20px;
 }
 .wrapper {
   max-width: 1200px;
@@ -44,7 +52,7 @@ ul {
   gap: 10px;
 }
 button {
-  font-size: 16px;
+  font-size: 13px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -65,10 +73,19 @@ button {
 /* Home Page  */
 .home-page {
   display: flex;
-  margin-top: 2cm;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1cm;
   margin-right: 3cm;
   margin-left: 3cm;
-  margin-bottom: 2cm;
+  margin-bottom: 1cm;
+  color: #d9efde;
+}
+h1 {
+  font-size: 45px;
+}
+.home-page p {
+  padding-right: 2cm;
 }
 img {
   border-radius: 20px;
@@ -78,20 +95,26 @@ img {
   display: flex;
   background-color: #d9efde;
   border-radius: 20px;
-
 }
 #features {
   display: flex;
-  justify-content: space-between;
   margin-top: 2cm;
   margin-right: 3cm;
   margin-left: 3cm;
   margin-bottom: 2cm;
+  gap: 10px;
 }
 .all-features {
   display: flex;
-  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 .feature-panel{
-  width: 300px;
+  width: 150px;
+
+  & img {
+    width: 150px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
 }
