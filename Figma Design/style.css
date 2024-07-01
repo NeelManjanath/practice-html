@@ -1,19 +1,20 @@
-body{
+body {
   background-color: white;
-  font-size: 13px;
+  font-size: 10px;
 }
 .main-body {
   background-color: #232e26;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   overflow-x: hidden;
-  width: 900px;
+  max-width: 900px;
+  width: 100%;
   margin: auto;
-  box-shadow: 50px 50px 50px  grey;
+  box-shadow: 50px 50px 50px grey;
   border-radius: 20px;
 }
 .wrapper {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
 }
 /* Top Menu Bar */
@@ -23,24 +24,26 @@ body{
   background-color: #d9efde;
   color: #232e26;
   border-radius: 20px;
-  padding-right: 32px;
-  padding-left: 32px;
-  height: 36px;
+  padding-right: 36px;
+  padding-left: 36px;
+  height: 45px;
   align-items: center;
 }
 .logo {
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: bolder;
 }
 #topdiv {
   width: 100%;
-  max-width: 620px;
+  max-width: 500px;
   height: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
   margin: 0;
   width: 100%;
@@ -48,13 +51,14 @@ ul {
 .about-us {
   display: flex;
   align-items: center;
-  width: 81px;
+  /* width: 81px; */
   gap: 10px;
 }
 button {
-  font-size: 13px;
+  font-size: 10px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  padding: 6px;
 }
 .type1 {
   border: solid #232e26;
@@ -73,12 +77,10 @@ button {
 /* Home Page  */
 .home-page {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1cm;
-  margin-right: 3cm;
-  margin-left: 3cm;
-  margin-bottom: 1cm;
+  margin: 2cm 2cm;
   color: #d9efde;
 }
 h1 {
@@ -87,34 +89,49 @@ h1 {
 .home-page p {
   padding-right: 2cm;
 }
+.home-page div{
+  max-width: 500px;
+}
 img {
+  display: block;
+  max-width: 200px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 20px;
 }
 /* Features Page */
 .feature-page {
   display: flex;
+  flex-wrap: wrap;
   background-color: #d9efde;
   border-radius: 20px;
 }
 #features {
   display: flex;
-  margin-top: 2cm;
-  margin-right: 3cm;
-  margin-left: 3cm;
-  margin-bottom: 2cm;
+  justify-content: space-between;
+  margin: 2cm 2cm;
   gap: 10px;
+  max-width: 900px;
+  width: 100%;
 }
 .all-features {
   display: flex;
-  gap: 1rem;
+  gap: 5px;
   flex-wrap: wrap;
 }
-.feature-panel{
-  width: 150px;
-
+.feature-panel {
+  max-width: 125px;
+  width: 100%;
   & img {
-    width: 150px;
-    aspect-ratio: 1/1;
+    max-width: 125px;
+    aspect-ratio: 1/1.4;
     object-fit: cover;
   }
+}
+h5 {
+  font-size: 12px;
+
+}
+h3{
+  font-size: 30px;
 }
